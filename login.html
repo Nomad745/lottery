@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>登录 - 智能记账账本</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body>
+    <main class="container" style="min-height:100vh;display:flex;align-items:center;justify-content:center;">
+      <div class="glass-card" style="max-width:420px;width:100%">
+        <h2 style="color:#fff;margin-top:0">手机号登录</h2>
+        <div class="login-form" style="display:flex;flex-direction:column;gap:12px;">
+          <input class="glass-input" id="phone" placeholder="请输入手机号（含国家码，如 +86...）" />
+          <input class="glass-input" id="otp" placeholder="验证码（收到后填写）" />
+          <button class="glass-button" id="btn-send" style="width:100%">发送验证码</button>
+          <button class="glass-button" id="btn-login" style="width:100%">登录/注册</button>
+          <div class="glass-alert" id="login-msg" style="display:none"></div>
+        </div>
+      </div>
+    </main>
+
+    <nav class="mobile-nav">
+      <a class="mobile-nav-item" href="./index.html">记账</a>
+      <a class="mobile-nav-item active" href="./login.html">登录</a>
+    </nav>
+
+    <script type="module" src="./js/login.js"></script>
+  </body>
+</html>
