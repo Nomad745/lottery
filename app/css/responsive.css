@@ -1,0 +1,10 @@
+/* 响应式适配 */
+@media (max-width: 1023px) {
+  .container { padding: 16px; }
+}
+
+@media (max-width: 767px) {
+  .responsive-grid { grid-template-columns: 1fr; gap: 16px; }
+  .content-section { margin: 16px 0; padding: 16px; }
+  .quick-form { grid-template-columns: 1fr; }
+}
